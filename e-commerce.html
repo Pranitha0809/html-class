@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛍 E-commerce Dashboard | Featured Products</title>
+    <style>
+        /* Basic CSS for presentation - you would typically use a separate style.css file */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .image-grid {
+            display: grid;
+            /* Creates a responsive grid of 5 columns */
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .image-item {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .image-item:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .image-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .image-item img {
+            width: 100%;
+            height: 200px; /* Fixed height for uniformity */
+            object-fit: cover; /* Ensures images cover the area without distortion */
+            display: block;
+        }
+        .image-item-caption {
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My E-commerce Shop</h1>
+        <p>Featured Products, Categories, and Offers</p>
+    </header>
+
+    <div class="container">
+        <h2>🔥 Today's Top 10 Picks</h2>
+
+        <div class="image-grid">
+
+            <div class="image-item">
+                <a href="product-1.html">
+                    <img src="https://via.placeholder.com/250x200/40a0ff/FFFFFF?text=Product+A" alt="High-End Headphones">
+                    <div class="image-item-caption">High-End Headphones</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="category-laptops.html">
+                    <img src="https://via.placeholder.com/250x200/964B00/FFFFFF?text=Category+B" alt="New Laptops">
+                    <div class="image-item-caption">Laptop Collection</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="offer-flash-sale.html">
+                    <img src="https://via.placeholder.com/250x200/FF5733/FFFFFF?text=Offer+C" alt="48-Hour Flash Sale">
+                    <div class="image-item-caption">⚡ Flash Sale: 50% Off</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="product-4.html">
+                    <img src="https://via.placeholder.com/250x200/3CB371/FFFFFF?text=Product+D" alt="Fitness Tracker">
+                    <div class="image-item-caption">Smart Fitness Tracker</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="category-shirts.html">
+                    <img src="https://via.placeholder.com/250x200/008080/FFFFFF?text=Category+E" alt="Men's Shirts">
+                    <div class="image-item-caption">Men's Apparel</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="product-6.html">
+                    <img src="https://via.placeholder.com/250x200/800080/FFFFFF?text=Product+F" alt="Wireless Keyboard">
+                    <div class="image-item-caption">Wireless Keyboard</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="category-furniture.html">
+                    <img src="https://via.placeholder.com/250x200/FFD700/000000?text=Category+G" alt="Home Furniture">
+                    <div class="image-item-caption">Modern Furniture</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="offer-free-ship.html">
+                    <img src="https://via.placeholder.com/250x200/FFA07A/FFFFFF?text=Offer+H" alt="Free Shipping">
+                    <div class="image-item-caption">🎁 Free Shipping Event</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="product-9.html">
+                    <img src="https://via.placeholder.com/250x200/4682B4/FFFFFF?text=Product+I" alt="Coffee Maker">
+                    <div class="image-item-caption">Premium Coffee Maker</div>
+                </a>
+            </div>
+
+            <div class="image-item">
+                <a href="category-kids.html">
+                    <img src="https://via.placeholder.com/250x200/228B22/FFFFFF?text=Category+J" alt="Kids Toys">
+                    <div class="image-item-caption">Kids' Corner Toys</div>
+                </a>
+            </div>
+
+        </div>
+
+        <hr>
+        <p style="text-align: center; color: #666;">**Note:** This is the main dashboard page. Clicking any of the images will attempt to load the linked HTML file (e.g., `product-1.html`).</p>
+    </div>
+
+</body>
+</html>
